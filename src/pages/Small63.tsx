@@ -1,3 +1,4 @@
+
 import { FunctionComponent, useCallback } from "react";
 import LocoCard from "../components/LocoCard";
 import styles from "./Small63.module.css";
@@ -28,39 +29,70 @@ const Small63: FunctionComponent = () => {
         </button>
       </div>
       <div className={styles.cardsContainer}>
-        <LocoCard
-          destinationImageUrl="/parisimage@2x.png"
-          destinationLocoName="Paris"
-          destinationPrice="$699"
-          propWidth="90.92px"
-          propDisplay="inline-block"
-          propWidth1="90.92px"
-          propLeft="38.39px"
-        />
-        <LocoCard
-          destinationImageUrl="/greeceimage@2x.png"
-          destinationLocoName="Greece"
-          destinationPrice="$1079"
-          propWidth="99.92px"
-          propDisplay="unset"
-          propWidth1="unset"
-          propLeft="47.39px"
-        />
-        <LocoCard
-          destinationImageUrl="/norwayimage@2x.png"
-          destinationLocoName="Norway"
-          destinationPrice="$895"
-          onCol3Click={onCol3Click}
-        />
-        <LocoCard
-          destinationImageUrl="/tuscanyimage@2x.png"
-          destinationLocoName="Tuscany"
-          destinationPrice="$1245"
-          propWidth="100.62px"
-          propWidth1="100.62px"
-          propLeft="48.09px"
-          onCol3Click={onCol4Click}
-        />
+        <button className={styles.col1}>
+          <div className={styles.pariscard}>
+            <img
+              className={styles.parisimageIcon}
+              alt=""
+              src="/parisimage@2x.png"
+            />
+            <div className={styles.destinationDetails}>
+              <b className={styles.paris}>Paris</b>
+              <div className={styles.details}>
+                <div className={styles.div}>$699</div>
+                <div className={styles.from}>from</div>
+              </div>
+            </div>
+          </div>
+        </button>
+        <button className={styles.col1}>
+          <div className={styles.pariscard}>
+            <img
+              className={styles.parisimageIcon}
+              alt=""
+              src="/greeceimage@2x.png"
+            />
+            <div className={styles.destinationDetails}>
+              <b className={styles.paris}>Greece</b>
+              <div className={styles.details1}>
+                <div className={styles.div1}>$1079</div>
+                <div className={styles.from1}>from</div>
+              </div>
+            </div>
+          </div>
+        </button>
+        <button className={styles.col1} onClick={onCol3Click}>
+          <div className={styles.pariscard}>
+            <img
+              className={styles.parisimageIcon}
+              alt=""
+              src="/norwayimage@2x.png"
+            />
+            <div className={styles.destinationDetails}>
+              <b className={styles.paris}>Norway</b>
+              <div className={styles.details}>
+                <div className={styles.div}>$895</div>
+                <div className={styles.from}>from</div>
+              </div>
+            </div>
+          </div>
+        </button>
+        <button className={styles.col1} onClick={onCol4Click}>
+          <div className={styles.pariscard}>
+            <img
+              className={styles.parisimageIcon}
+              alt=""
+              src="/tuscanyimage@2x.png"
+            />
+            <div className={styles.destinationDetails}>
+              <b className={styles.paris}>Tuscany</b>
+              <div className={styles.details3}>
+                <div className={styles.div3}>$1245</div>
+                <div className={styles.from3}>from</div>
+              </div>
+            </div>
+          </div>
+        </button>
       </div>
       <div className={styles.viewAllBottom}>
         <div className={styles.viewAllDestinations1}>View all destinations</div>
