@@ -4,7 +4,7 @@ import styles from "./LocoCard.module.css";
 
 type LocoCardType = {
   destinationImageUrl?: string;
-  destinationName?: string;
+  destinationGithubName?: string;
   destinationPrice?: string;
 
   /** Style props */
