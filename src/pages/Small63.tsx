@@ -1,3 +1,4 @@
+
 import { FunctionComponent, useCallback } from "react";
 import LocoCard from "../components/LocoCard";
 import styles from "./Small63.module.css";
@@ -30,7 +31,7 @@ const Small63: FunctionComponent = () => {
       <div className={styles.cardsContainer}>
         <LocoCard
           destinationImageUrl="/parisimage@2x.png"
-          destinationName="Paris"
+          destinationGithubName="Paris"
           destinationPrice="$699"
           propWidth="90.92px"
           propDisplay="inline-block"
@@ -39,7 +40,7 @@ const Small63: FunctionComponent = () => {
         />
         <LocoCard
           destinationImageUrl="/greeceimage@2x.png"
-          destinationName="Greece"
+          destinationGithubName="Greece"
           destinationPrice="$1079"
           propWidth="99.92px"
           propDisplay="unset"
@@ -48,13 +49,13 @@ const Small63: FunctionComponent = () => {
         />
         <LocoCard
           destinationImageUrl="/norwayimage@2x.png"
-          destinationName="Norway"
+          destinationGithubName="Norway"
           destinationPrice="$895"
           onCol3Click={onCol3Click}
         />
         <LocoCard
           destinationImageUrl="/tuscanyimage@2x.png"
-          destinationName="Tuscany"
+          destinationGithubName="Tuscany"
           destinationPrice="$1245"
           propWidth="100.62px"
           propWidth1="100.62px"

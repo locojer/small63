@@ -1,3 +1,4 @@
+
 import { FunctionComponent, useMemo } from "react";
 import CSS, { Property } from "csstype";
 import styles from "./LocoCard.module.css";
@@ -19,7 +20,7 @@ type LocoCardType = {
 
 const LocoCard: FunctionComponent<LocoCardType> = ({
   destinationImageUrl,
-  destinationName,
+  destinationGithubName,
   destinationPrice,
   propWidth,
   propDisplay,
@@ -55,7 +56,7 @@ const LocoCard: FunctionComponent<LocoCardType> = ({
           src={destinationImageUrl}
         />
         <div className={styles.destinationDetails}>
-          <b className={styles.paris}>{destinationName}</b>
+          <b className={styles.paris}>{destinationGithubName}</b>
           <div className={styles.details} style={detailsStyle}>
             <div className={styles.div} style={divStyle}>
               {destinationPrice}
