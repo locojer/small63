@@ -16,7 +16,7 @@ const Small63: FunctionComponent = () => {
     <div className={styles.small63}>
       <div className={styles.destinationsTitles}>
         <div className={styles.titleContainer}>
-          <b className={styles.planYourNext}>Plan your next trip</b>
+          <b className={styles.planYourNext}>Plan your next github trip</b>
           <b className={styles.mostPopularDestinations}>
             Most Popular Destinations
           </b>
